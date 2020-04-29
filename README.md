@@ -1,4 +1,5 @@
 # yys_cbg_reader
+pyinstaller -F ui.py --noconsole --hidden-import PySide2.QtXml --icon="icon.ico"
 # import requests
 # import re
 # import json
