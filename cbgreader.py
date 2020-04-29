@@ -9,7 +9,6 @@ import json
 
 class cbg:
     def __init__(self):
-        #https://yys.cbg.163.com/cgi/api/get_equip_detail?serverid=15&ordersn=202004050101616-15-OY038RUPZEZKN
         self.base_url ='https://yys.cbg.163.com/cgi/api/get_equip_detail?'
         self.header = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36'}
         self.sec_soul_list = {
@@ -155,38 +154,4 @@ class cbg:
         with open(file_name,'w') as outfile:
             outfile.write(json_file)
         
-
-# if __name__ == "__main__":
-#     cbg = cbg()
-#     html_text = cbg.readurl("https://yys.cbg.163.com/cgi/mweb/equip/7/202003181501416-7-XGXG1E9QPSSOHC")
-    # html_text = cbg.check_url('26','201910282001616-26-L7CLXWYZKVN3R')
-    # start = time.time()
-    # print("Starting to fetch soul data...")
-    # cbg.pull_soul(html_text)
-    # end = time.time()
-    # print("Finished fetching data in "+str(end-start)+' second')
-    # command = input('''What do you wanna do?  
-    #                  1. Press "1" and enter to save souls into a json file 
-    #                  2. Press "1" and enter to check max speed
-    #                  3. ...
-    #                  4. Prss 'Q' to quit''')
-    # while (command != 'Q' or command !='q'):
-    #     if command == '1':
-    #         #cbg = cbg()
-    #         print("Start to create a json file, named as 'test.json'")
-    #         cbg.jsonfile()
-    #     elif command == '2':
-    #         pass
-    #     elif command =='q' or command == 'Q':
-    #         break
-    #     else:
-    #         pass
-    #     command = input('''What do you wanna do?''')
-
-
-
-
-
-
-    #os.system("pause")
     
