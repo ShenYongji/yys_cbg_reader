@@ -71,7 +71,10 @@ class cbg:
     def pull_soul(self,html_text):
         self.soul = []
         soul_info = html_text['equip']['equip_desc']
-        soul_info_json = soul_info.replace("'", "\"")
+        #soul_info_json = soul_info.replace("'", "\"")
+        #soul_info_json = soul_info.replace("'", "\"") //need to check reason 
+        soul_info_json = soul_info
+        print(soul_info_json)
         info = json.loads(soul_info_json)
         for i in info['inventory']:
             if info['inventory'][i]['level'] == 15:
